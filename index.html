@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestra Mano - Hand Aesthetics & Strength</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Palestra<span>Mano</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#exercises">Esercizi</a></li>
+            <li><a href="#tracker">Tracker</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Rafforza la tua <span>Presa</span>,<br>Allena la tua <span>Mente</span></h1>
+                <p>Un allenamento completo per le tue mani. Scopri esercizi mirati per migliorare mobilità, forza e salute articolare.</p>
+                <button class="cta-btn" id="startBtn">Inizia l'Allenamento</button>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-orb">
+                    <div class="orb-inner"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exercises" class="exercises">
+            <h2>I Nostri Esercizi</h2>
+            <div class="card-grid">
+                <div class="glass-card">
+                    <div class="card-icon">✊</div>
+                    <h3>Grip Strength</h3>
+                    <p>Migliora la forza di presa generale stringendo e rilasciando la tensione.</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">🖐️</div>
+                    <h3>Estensione Dita</h3>
+                    <p>Rinforza i muscoli estensori, prevenendo infortuni e squilibri.</p>
+                </div>
+                <div class="glass-card">
+                    <div class="card-icon">🔄</div>
+                    <h3>Rotazione Polsi</h3>
+                    <p>Aumenta la flessibilità e riduce la rigidità articolare dei polsi.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tracker" class="tracker">
+            <h2>Il tuo Tracker</h2>
+            <div class="tracker-glass">
+                <div class="tracker-stats">
+                    <div class="stat">
+                        <span class="stat-value" id="repsCount">0</span>
+                        <span class="stat-label">Ripetizioni</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="timer">00:00</span>
+                        <span class="stat-label">Tempo</span>
+                    </div>
+                </div>
+                <div class="tracker-controls">
+                    <button class="action-btn" id="addRepBtn">+1 Ripetizione</button>
+                    <button class="action-btn secondary" id="resetBtn">Reset</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="mano.js"></script>
+</body>
+</html>
